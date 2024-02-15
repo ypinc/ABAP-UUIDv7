@@ -7,7 +7,7 @@ Based on the IETF Draft by Brad G. Peabody and Kyzer R. Davis
 
 This implementation uses 12-bit counter to resolve collisions according to Section 6.2, method 1.
 
-Single zero bit acts as a overflow safeguard, allowing to generate at least 2048 different UUIDs every millisecond
+Single zero bit acts as an overflow safeguard, allowing to generate at least 2048 monotonically increased UUIDs every millisecond
 
 ## Usage: 
 Drop-in replacement of the standard cl_system_uuid=>create_uuid_x16_static( ):
