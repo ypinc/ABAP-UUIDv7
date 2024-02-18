@@ -80,7 +80,7 @@ class lcl_uuidv7 implementation.
     rv_uid7+8(1) = rv_uid7+8(1) bit-and mc_mask_var bit-or mc_bits_var. " set variant bits 10xxxxxx
 
     if rv_uid7 < mv_last. " if within the same ms and generated less - increment the counter
-      rv_uid7+6(2) = mv_last+6(2) + 1. " we have at least 32.768 entries to generate before overflow
+      rv_uid7+6(2) = mv_last+6(2) + 1. " we have at least 2048 entries to generate before overflow
     endif.
     assert rv_uid7 > mv_last.
     mv_last = rv_uid7. " save generated UID to check against it next time.
