@@ -1,8 +1,8 @@
-# ABAP-UUIDv7
-UUIDv7 generation in ABAP
+# ABAP-UUIDv7 RFC 9562
+RFC9562 UUIDv7 generation in ABAP
 
-Based on the IETF Draft by Brad G. Peabody and Kyzer R. Davis
-[New UUID Formats](https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-04.html)
+Based on the RFC 9562 by Brad G. Peabody, Kyzer R. Davis and Paul J. Leach
+[Universally Unique IDentifiers (UUIDs)](https://www.rfc-editor.org/rfc/rfc9562)
 
 
 This implementation uses 12-bit counter to resolve collisions according to Section 6.2, method 1.
